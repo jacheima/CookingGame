@@ -9,7 +9,7 @@ public class RecipeBook : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Recipes = new Queue<string>();
+        
 	}
 	
 	// Update is called once per frame
