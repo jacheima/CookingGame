@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Dry_Storage.unity
+- path: Assets/Scenes/RecipeSelect.unity
   isLoaded: 1
   isActive: 1

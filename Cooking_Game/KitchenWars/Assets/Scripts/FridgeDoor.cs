@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class FridgeDoor : MonoBehaviour {
 
-    public Sprite[] doorStates;
+    public static string nameOfObject;
+    public GameObject doorClosed;
+    public GameObject doorOpen;
 
-    public Button openDoor;
+    private bool isDoorOpen = false;
+
+    
 
 
 	// Use this for initialization
 	void Start () {
-		
+        doorOpen.SetActive(false);
+        doorClosed.SetActive(true);
 	}
 	
 	// Update is called once per frame
@@ -22,21 +27,18 @@ public class FridgeDoor : MonoBehaviour {
      
 	}
 
-    public void WalkInFridge()
+    private void OnMouseDown()
     {
-        if (openDoor.image.sprite == doorStates[0])
-        {
-            openDoor.image.sprite = doorStates[1];
+        doorClosed.SetActive(false);
+        doorOpen.SetActive(true);
+        isDoorOpen = true;
 
-           
-        }
-
-        Debug.Log("The player has opened the fridge door");
-
-        if (openDoor.image.sprite == doorStates[1])
+        if(isDoorOpen == true)
         {
             SceneManager.LoadScene("WalkInFridge");
         }
 
+        
+        
     }
 }
