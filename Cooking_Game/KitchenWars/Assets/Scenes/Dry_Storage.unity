@@ -410,7 +410,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170843483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -4.92, z: 0}
+  m_LocalPosition: {x: 0.07, y: -5.03, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1420,8 +1420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a6f1495fbc4634f8f62c9c4183fdb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorClosed: {fileID: 0}
-  doorOpen: {fileID: 0}
+  doorClosed: {fileID: 1630029849}
+  doorOpen: {fileID: 1503638315}
 --- !u!224 &769927345
 RectTransform:
   m_ObjectHideFlags: 0
